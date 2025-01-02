@@ -2,7 +2,6 @@ n = input()
 ok = 0
 visit = set()
 while n != "1":
-    # theem truong hop lap vo hajn
     if len(n) == 1 and n != "1":
         ok = 1
         break

@@ -1,11 +1,11 @@
-import numpy as np
-
+from collections import defaultdict
 n = int(input())
-a = np.array(list(map(int, input().split())))
-x = int(input())
-res = np.where(a == x)[0]
-if len(res) > 0:
-    print(",".join(map(str,res)))
+a = list(map(int, input().split()))
+k = int(input())
+dict = defaultdict(list)
+for i in range(n):
+    dict[a[i]].append(i)
+if len(dict[k]) == 0:
+    print(-1)
 else:
-    print("-1")
-
+    print(','.join(map(str,dict[k])))

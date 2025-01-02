@@ -22,7 +22,6 @@ for _ in range(t):
         print("Invalid")
         continue
 
-    # Xử lý loại truy vấn
     if yc == "min":
         print(min(res))
     elif yc == "max":
